@@ -1,11 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>My website is live</h1>
-</body>
+    <title>Interactive Experience Research</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!--
+      The opening section uses a simple portfolio-style cover. Text is used
+      instead of images to create a clean and restrained appearance. A large
+      title, small course details, and large areas of empty space establish a
+      clear visual hierarchy. This approach gives the page a personal visual
+      direction without copying the style of the website being studied.
+    -->
+    <header class="cover">
+      <div class="cover-details">
+        <p>WENTIAN ZHANG</p>
+        <p>INTERACTIVE MEDIA 1</p>
+      </div>
+
+      <div class="cover-content">
+        <h1>
+          INTERACTIVE<br>
+          EXPERIENCE<br>
+          RESEARCH
+        </h1>
+
+        <h2 class="website-name">MYOUNGAE KIM PORTFOLIO</h2>
+
+        <p class="introduction">
+          This page records my actions, observations, and personal experience
+          with the website.
+        </p>
+      </div>
+    </header>
+
+    <!--
+      The cover and the main content are visually separated through changes in
+      background colour, spacing, and layout. This creates a clear transition
+      from the introductory information to the written observations. All
+      thirteen questions are placed on one continuous page and use the same
+      section structure, creating a consistent reading order and making the
+      content easier to browse.
+    -->
+    <main>
+      <section class="observations">
+        <h2 class="observations-title">OBSERVATIONS</h2>
+        <p class="observations-description">
+          13 QUESTIONS ABOUT THE INTERACTIVE EXPERIENCE
+        </p>
+
+        <!--
+          Each question is placed in its own section. Separate classes are used
+          for the number, question, and answer so that each part can have a
+          different visual style. The questions use h3 headings because they sit
+          below the Observations h2 heading. Every response, including Question
+          2, remains a paragraph to maintain a consistent structure.
+        -->
+        <section class="question">
+          <p class="question-number">01</p>
+          <h3>
+            What was the first thing you paid attention to when interacting
+            with the experience?
+          </h3>
+          <p class="question-answer">
+            The first thing I noticed was the large project image on the right.
+            Its black background stood out against the white page. I could
+            quickly tell that this was a design portfolio. I also saw the
+            numbered boxes on the left, but I did not know what they were for.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">02</p>
+          <h3>
+            Spend two minutes with the experience and create a list of each of
+            your discrete actions.
+          </h3>
+          <p class="question-answer">
+            I first looked at the designer's name and the first project. Then I
+            clicked several numbered boxes on the left. I found small Christmas
+            objects and moved some of them around. I clicked “Merry Christmas!”
+            and the page turned red. I clicked it again, and the page became
+            white. After that, I viewed the project images, scrolled down the
+            portfolio, opened a project page, and moved to the next projects.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">03</p>
+          <h3>
+            What part of the experience did you spend the most time engaging
+            with?
+          </h3>
+          <p class="question-answer">
+            I spent most of my time in two areas. First, I stayed with the
+            numbered boxes because I wanted to see what they contained. I also
+            spent time reading the project descriptions and looking at the
+            large images. I moved through the later projects more quickly.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">04</p>
+          <h3>
+            What was the most common action in your two-minute interaction with
+            the experience?
+          </h3>
+          <p class="question-answer">
+            Clicking was my most common action. I clicked boxes, changed the
+            page colour, switched images, opened a project, and moved to other
+            projects. I started scrolling more after I entered the detailed
+            project pages because they contained many large images.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">05</p>
+          <h3>
+            What is your impression of the intended primary goal of the
+            interactive experience?
+          </h3>
+          <p class="question-answer">
+            I think the main goal is to show MyoungAe Kim's design work in a
+            more personal way. The right side works as a clear portfolio. The
+            hidden objects on the left add some playfulness and show parts of
+            the designer's interests. The website tries to present both the
+            designer's work and personality.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">06</p>
+          <h3>
+            How does the interactive experience communicate this primary goal?
+          </h3>
+          <p class="question-answer">
+            The site divides these two purposes into two areas. The right side
+            uses project titles, short descriptions, dates, and large images.
+            The left side uses numbered boxes with hidden objects. This makes
+            the portfolio easy to read while also giving the user something
+            small to explore.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">07</p>
+          <h3>
+            What is your impression of how the experience should be interacted
+            with over time? For how long and how many different times?
+          </h3>
+          <p class="question-answer">
+            I think the website is mainly designed for one continuous visit. I
+            could try the boxes for a few minutes and then browse the projects
+            that interested me. I might return if I wanted to check the
+            designer's work, but the interactions did not give me a reason to
+            return often.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">08</p>
+          <h3>
+            How does the interactive experience communicate how it should be
+            interacted with over time?
+          </h3>
+          <p class="question-answer">
+            The words “Click the boxes to explore” clearly tell the user what to
+            do on the left. The long project list on the right encourages
+            scrolling. Each project title can also be opened to show more
+            images. There is no fixed order, so I was free to explore the
+            website at my own pace.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">09</p>
+          <h3>
+            What other media forms, digital or otherwise, does the experience
+            reference?
+          </h3>
+          <p class="question-answer">
+            The clearest reference is a physical Advent calendar. A traditional
+            one has numbered doors with small gifts or pictures behind them.
+            However, I grew up in China and did not know this Christmas
+            tradition. I only understood the reference after reading the
+            project description. The right side also uses the common format of
+            a digital portfolio.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">10</p>
+          <h3>
+            What does this reference/s communicate to you about how you should
+            act when engaging with your research experience?
+          </h3>
+          <p class="question-answer">
+            Although I did not understand the Christmas reference at first, the
+            numbers and the instruction made me click the boxes. The portfolio
+            layout on the right made me scroll, read, and open projects. The two
+            sides asked me to explore the website in different ways.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">11</p>
+          <h3>
+            What does this reference/s communicate to you about how you should
+            feel when engaging with your research experience?
+          </h3>
+          <p class="question-answer">
+            The hidden boxes and Christmas objects made the website feel
+            slightly playful. The black lines, white background, and organised
+            layout made it feel calm and professional. However, the Advent
+            calendar did not create a strong Christmas feeling for me because I
+            did not know the tradition. I mainly felt curious at first.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">12</p>
+          <h3>
+            What is the most frustrating part of the interaction to you and
+            what makes that part frustrating?
+          </h3>
+          <p class="question-answer">
+            The most frustrating part was moving the small objects. Most of them
+            did not cause any further change, and the site did not clearly
+            explain why I should move them. I could not see how they connected
+            to the designer or the work. Because of this, the interaction felt
+            a little meaningless to me.
+          </p>
+        </section>
+
+        <section class="question">
+          <p class="question-number">13</p>
+          <h3>
+            What is the most satisfying part of the interaction to you and what
+            makes that part satisfying?
+          </h3>
+          <p class="question-answer">
+            The most satisfying moment was clicking “Merry Christmas!” and
+            seeing the whole page turn red. This result was immediate and clear.
+            I also liked how the projects were presented. The titles,
+            descriptions, and images were easy to follow, and the detailed
+            pages were simple to use.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <!--
+      AI USE:
+      During this project, In this project, I used OpenAI’s ChatGPT to help
+      me review and understand coding concepts from the course materials.
+      I also used it for translation and checking word meanings. When I was unsure
+      how to build certain parts of the website, ChatGPT helped me identify
+      suitable HTML elements, CSS properties, and code syntax. I also used it
+      to check parts of my code when I was unsure whether they were correct. 
+      However, all code was written by me.
+    -->
+    <footer class="page-footer">
+      <h2 class="footer-heading">SOURCE</h2>
+      <p>
+        <a href="https://www.myoungaekim.com/">MyoungAe Kim Portfolio</a>
+      </p>
+    </footer>
+  </body>
 </html>

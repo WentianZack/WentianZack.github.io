@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2ef;
+  color: #111111;
+}
+
+/*
+  The cover uses Flexbox to arrange its content vertically. The small name
+  and course details remain near the top, while the main title is positioned
+  lower on the screen. Percentage padding keeps balanced space on both sides,
+  and vw allows the title size to change with the screen width. This keeps
+  the layout simple while making the title responsive.
+*/
+.cover {
+  min-height: 100vh;
+  padding: 2.5rem 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08rem;
+}
+
+.cover-content {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.cover h1 {
+  font-size: 8vw;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.website-name {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.introduction {
+  max-width: 28rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/*
+  The main content uses a maximum width and automatic side margins,
+  preventing lines of text from becoming too long on larger screens. Its
+  white background creates a clear visual change from the warmer cover.
+  Consistent padding and spacing separate the heading, questions, and answers
+  without adding unnecessary decoration, keeping the written content easy
+  to follow.
+*/
+main {
+  padding: 8rem 5%;
+  background-color: #ffffff;
+}
+
+.observations {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.observations-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.observations-description {
+  margin-top: 0.75rem;
+  margin-bottom: 5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08rem;
+  color: #666666;
+}
+
+.question {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  column-gap: 5%;
+  padding: 4rem 0;
+  border-top: 1px solid #d2d2d2;
+}
+
+.question-number {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #b5b5b5;
+}
+
+.question h3 {
+  grid-column: 2;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.question-answer {
+  grid-column: 2;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333333;
+}
+
+/*
+  The footer returns to the warm background used on the cover, creating a
+  clear ending to the page. The source link uses a simple bottom border
+  instead of the browser's default underline. When the mouse moves over the
+  link, its colour changes slightly, providing clear feedback that the text
+  can be clicked.
+*/
+.page-footer {
+  padding: 4rem 5%;
+  background-color: #f2f2ef;
+  border-top: 1px solid #d2d2d2;
+}
+
+.footer-heading {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  color: #666666;
+}
+
+.page-footer p {
+  margin-top: 1rem;
+}
+
+.page-footer a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #111111;
+}
+
+.page-footer a:hover {
+  color: #666666;
+  border-color: #666666;
+}
