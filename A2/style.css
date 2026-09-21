@@ -1,0 +1,198 @@
+:root {
+  --primary-bg-color: #0d0812;
+  --text-color: #f1eaf3;
+  --main-bg-color: #1b1020;
+  --main-text-color: #ffffff;
+  --main-btn-bg-color: #c477d0;
+  --secondary-bg-color: #211428;
+  --accent-color: #e2a4e8;
+  --muted-text-color: #cdbed1;
+  --border-color: #5f3b68;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* The dark background and purple accent colours connect the interface to the
+supplied video. The limited colour palette, simple spacing and small amount of
+text keep the moving image as the main focus of the page. */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header {
+  width: 100%;
+  padding: 2.5rem 1rem;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-label {
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-introduction {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--muted-text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem 1rem;
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+}
+
+.media-player {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000000;
+  border: 1px solid var(--border-color);
+}
+
+.media-player video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* The starter code uses Flexbox for the media controls. I kept this layout
+and added flex-wrap, so the progress bar and buttons can move onto a second
+line on smaller screens. This helps the controls fit different screen sizes. */
+.custom-controls {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.custom-controls button {
+  padding: 0.6rem 0.9rem;
+  background-color: var(--main-btn-bg-color);
+  color: var(--primary-bg-color);
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-controls button:hover {
+  background-color: var(--accent-color);
+}
+
+.custom-controls img {
+  display: block;
+}
+
+.progress-bar {
+  min-width: 180px;
+  height: 10px;
+  background-color: var(--border-color);
+  overflow: hidden;
+  flex: 1;
+}
+
+.progress-bar span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.artwork-info {
+  width: 100%;
+  max-width: 720px;
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  background-color: var(--secondary-bg-color);
+  border-left: 4px solid var(--accent-color);
+}
+
+.artwork-info p {
+  color: var(--muted-text-color);
+}
+
+footer {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: var(--main-bg-color);
+  color: var(--muted-text-color);
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+footer p {
+  margin-bottom: 0.4rem;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+footer a:hover {
+  color: var(--main-text-color);
+}
+
+/* When the Gallery Mode button is clicked, JavaScript adds the gallery-mode
+class to the page. The CSS then hides the header, artwork information and
+footer, and gives the video more space. The controls stay visible so the viewer
+can play the video or leave Gallery Mode. */
+.gallery-mode {
+  background-color: #000000;
+}
+
+.gallery-mode .site-header,
+.gallery-mode .artwork-info,
+.gallery-mode footer,
+.gallery-mode .artwork-display h2 {
+  display: none;
+}
+
+.gallery-mode .container {
+  max-width: 1400px;
+}
+
+.gallery-mode .media-player {
+  border-color: var(--accent-color);
+}
+
+.gallery-mode #gallery-mode-btn {
+  background-color: var(--main-text-color);
+}
